@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e5f5;
+    color: #4a148c;
+}
+h1, h2 {
+    text-align: center;
+    color: #6a1b9a;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+form {
+    margin-bottom: 30px;
+    background-color: #f8bbd0;
+    padding: 15px;
+    border-radius: 10px;
+}
+form input[type="text"], form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ce93d8;
+    border-radius: 5px;
+    background-color: #f3e5f5;
+}
+form input[type="file"] {
+    margin-bottom: 10px;
+}
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #8e24aa;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #6a1b9a;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery div {
+    width: 30%;
+    background-color: #e1bee7;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.comments ul {
+    list-style-type: none;
+    padding: 0;
+}
+.comments li {
+    background-color: #f3e5f5;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ce93d8;
+}
+.comments form input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ce93d8;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #f3e5f5;
+}
+.comments form button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: none;
+    background-color: #8e24aa;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comments form button:hover {
+    background-color: #6a1b9a;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home - Design Gallery</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .design {
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 10px;
+      width: 200px;
+    }
+    .design img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Design Gallery</h1>
+  <div class="gallery">
+    <% designs.forEach(design => { %>
+      <div class="design">
+        <h2><%= design.title %></h2>
+        <p><strong>Colors:</strong> <%= design.colors.join(', ') %></p>
+        <p><strong>Fabric Material:</strong> <%= design.fabricMaterial %></p>
+        <p><strong>Dress Type:</strong> <%= design.dressType %></p>
+        <p><strong>Personality:</strong> <%= design.personality.join(', ') %></p>
+        <p><strong>Other:</strong> <%= design.other %></p>
+        <p><strong>Price:</strong> $<%= design.price %></p>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>

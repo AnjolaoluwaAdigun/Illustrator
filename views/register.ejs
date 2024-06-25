@@ -1,0 +1,32 @@
+<!-- views/register.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+</head>
+<body>
+  <% if (message) { %>
+    <div class="alert alert-success"><%= message %></div>
+  <% } %>
+  <% if (error_msg) { %>
+    <div class="alert alert-danger"><%= error_msg %></div>
+  <% } %>
+  <% if (errors && errors.length > 0) { %>
+    <ul>
+      <% errors.forEach(error => { %>
+        <li><%= error.msg %></li>
+      <% }); %>
+    </ul>
+  <% } %>
+
+  <form action="/register" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" name="username" value="<%= username %>">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" value="<%= password %>">
+    <br>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
