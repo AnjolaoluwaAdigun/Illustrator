@@ -23,6 +23,9 @@
   <div class="gallery">
     <% designs.forEach(design => { %>
       <div class="design">
+        <% if(design.images.length>0){design.images.forEach(i =>{ %>
+          <img src="<%=i%>" alt="">
+          <%})}%>
         <h2><%= design.title %></h2>
         <p><strong>Colors:</strong> <%= design.colors.join(', ') %></p>
         <p><strong>Fabric Material:</strong> <%= design.fabricMaterial %></p>
